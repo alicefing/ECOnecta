@@ -1,5 +1,5 @@
 # ECOnecta
-Projeto integrador - UVV 
+Projeto integrador - UVV || 
 Alice Fin Giro,
 Bianca Andrade,
 Kaylane Medice,
