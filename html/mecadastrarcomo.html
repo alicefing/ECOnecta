@@ -45,34 +45,31 @@
         </div>
       </nav>
 
-  <!-- Formulário de Login -->
-  <div class="container my-5">
-    <h3>Login</h3>
-    <div class="card p-4 shadow-sm">
-      <form>
-        <div class="mb-3">
-          <label class="form-label">Email:</label>
-          <input type="email" class="form-control" placeholder="Digite seu email">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Senha:</label>
-          <input type="password" class="form-control" placeholder="Digite sua senha">
-        </div>
 
-        <button type="submit" class="btn btn-success w-100 mb-3">Entrar</button>
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <!-- Card Cidadão -->
+    <div class="col-md-4 mb-3">
+      <div class="card text-center p-4" style="background-color: #e6e6e6;">
+        <i class="bi bi-person-circle mb-3" style="font-size: 80px;"></i>
+        <h5 class="card-title">Cidadão</h5>
+        <p class="card-text">Acesse como um cidadão comum.</p>
+        <a href="cidadao.html" class="btn btn-success">Entrar como Cidadão</a>
+      </div>
+    </div>
 
-        <p class="text-center">Ou faça login usando outra conta</p>
-        <div class="text-center">
-          <a href="#" class="btn btn-outline-success me-2"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="btn btn-outline-success"><i class="bi bi-google"></i></a>
-        </div>
-
-        <p class="text-center mt-3">
-          Não tem uma conta? <a href="home.html" class="text-success">Cadastre-se</a>
-        </p>
-      </form>
+    <!-- Card Organizador -->
+    <div class="col-md-4 mb-3">
+      <div class="card text-center p-4" style="background-color: #e6e6e6;">
+        <i class="bi bi-person-circle mb-3" style="font-size: 80px;"></i>
+        <h5 class="card-title">Organizador</h5>
+        <p class="card-text">Acesse como organizador de eventos ou administrador.</p>
+        <a href="organizador.html" class="btn btn-success">Entrar como Organizador</a>
+      </div>
     </div>
   </div>
+</div>
+
 
   <!-- Rodapé -->
   <footer class="text-center py-4" style="background-color: #355E3B; color: white;">
@@ -80,5 +77,6 @@
     <p>&copy; 2025 ECOnecta. Todos os direitos reservados.</p>
   </footer>
 
+  
 </body>
 </html>
