@@ -33,19 +33,22 @@
             </ul>
         </div>
     </nav> 
-  <div class="container py-5">
+    <div class="container py-5">
     <div class="row">
       <div class="col-md-6 mb-4">
-        <div class="p-4 bg-white rounded shadow-sm">
+        <div class="p-4 bg-white rounded shadow-sm mb-3">
           <h5>Sobre nós:</h5>
           <p>
             A ECOnecta é uma plataforma voltada para a sustentabilidade e a conscientização ambiental.
             Nosso objetivo é facilitar a reciclagem por meio do mapeamento e divulgação de pontos de coleta.
             Conectamos pessoas e soluções para um futuro mais limpo e consciente.
           </p>
+        </div>
+        <br> <br> 
+        <div class="p-4 bg-white rounded shadow-sm">
           <div class="d-grid gap-2">
-            <button class="btn btn-outline-success">Cadastrar evento</button>
-            <button class="btn btn-outline-danger">Denunciar resíduo abandonado</button>
+            <a href="eventos.html" class="btn btn-outline-success">Cadastrar evento</a>
+            <a href="denuncia.html" class="btn btn-outline-danger">Denunciar resíduo abandonado</a>
           </div>
         </div>
       </div>
@@ -53,13 +56,13 @@
       <div class="col-md-6 mb-4">
         <div class="p-4 bg-white rounded shadow-sm text-center">
           <h5>Pontos de Coleta próximos</h5>
-          <div class="mb-3">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086233249412!2d-122.41941548468113!3d37.7749297797598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c25b869bb%3A0x9562649e59a47c5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1625017411271!5m2!1sen!2sus"
-              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-          </div>
-          <button class="btn btn-success">Encontrar ponto de coleta</button>
+            <div class="mb-3">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.810842351122!2d-40.29202592424427!3d-20.33169918236845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb817b2de7b6141%3A0xc56fcbdb24ac56e7!2sVila%20Velha%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v1718477234686!5m2!1spt-BR!2sbr"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#pontoColetaModal"> Encontrar ponto de coleta </button>
         </div>
       </div>
     </div>
@@ -99,5 +102,27 @@
       <p>&copy; 2025 Empresa Tech ES - todos os direitos reservados.</p>
   </div>
 </footer>
+
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#pontoColetaModal">
+  Encontrar ponto de coleta
+</button>
+
+<div class="modal fade" id="pontoColetaModal" tabindex="-1" aria-labelledby="pontoColetaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color: #4B6B42; color: white;">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="pontoColetaModalLabel">Informações sobre o ponto de coleta</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-light text-dark rounded">
+        <p><strong>Endereço:</strong> Prefeitura Vila Velha</p>
+        <p><strong>Horário de funcionamento:</strong> Segunda a sexta, das 7h às 16h</p>
+        <p><strong>Materiais aceitos:</strong> Garrafa Pet</p>
+        <a href="#" class="btn btn-success">&lt; Rotas</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </body>
