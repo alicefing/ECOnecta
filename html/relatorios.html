@@ -18,13 +18,10 @@
   </div>
 </div>
 
-     
      <nav class="navbar navbar-expand-lg">
-     
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-      
           <div class="collapse navbar-collapse" id="menuNavbar">
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link active" href="../html/home.html">Home</a></li>
@@ -37,113 +34,125 @@
           </div>
         </div>
       </nav>
-     
-  <div class="container">
-    <h1>Relatório de Reciclagem</h1>
 
-    <div class="header">
-      <div>
-        <label>Evento / Ponto</label>
-        <select>
-          <option>Ciclo Vivo / Pracinha Vila Velha</option>
+    <h1>Relatório de Reciclagem </h1>  
+  
+<div class="inicio-container container my-4">
+  <div class="card p-4 shadow-sm">
+    <form class="row g-3 align-items-end">
+
+      <div class="col-md-5">
+        <label for="eventoPonto" class="form-label">Evento/Ponto</label>
+        <select class="form-select" id="eventoPonto">
+          <option value="">Selecione</option>
+          <option value="evento1">Evento 1</option>
+          <option value="evento2">Evento 2</option>
+          <option value="evento3">Evento 3</option>
         </select>
       </div>
-      <div>
-        <label>Data do Evento</label>
-        <input type="date" value="2025-02-12">
-      </div>
-      <div class="buttons">
-        <button onclick="gerarRelatorio()">Gerar Relatório</button>
-        <button onclick="criarRelatorio()">Criar Relatório</button>
-      </div>
-    </div>
 
-    <div class="resumo">
-      <div><strong>Total Coletado</strong><br>1.250 kg</div>
-      <div><strong>Total Reciclado</strong><br>850 kg</div>
-      <div><strong>Taxa de Reciclagem</strong><br>68%</div>
-    </div>
+      <div class="col-md-3">
+        <label for="dataEvento" class="form-label">Data</label>
+        <input type="date" class="form-control" id="dataEvento">
+      </div>
 
-    <div class="main">
-      <div class="grafico">
-        <h3>Volumes de Resíduos por Tipos (Kg)</h3>
-        <div class="barras">
-          <div class="barra" style="height: 300px;"><span>Plástico</span></div>
-          <div class="barra" style="height: 220px;"><span>Papelão</span></div>
-          <div class="barra" style="height: 180px;"><span>Vidro</span></div>
-          <div class="barra" style="height: 120px;"><span>Metal</span></div>
-          <div class="barra" style="height: 50px;"><span>Eletrônico</span></div>
+      <div class="col-md-2 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary w-100">Gerar Relatório</button>
+      </div>
+
+            <div class="col-md-2 d-flex align-items-end">
+        <button type="submit" class="btn btn-primary w-100">Criar Relatório</button>
+      </div>
+
+    </form>
+  </div>
+<br>
+  
+
+<div class="card shadow-sm p-4">
+
+  <!-- Cabeçalho com botão de exportação -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h5 class="mb-0"><b></b>Relatório de Evento</b></h5>
+    <button class="btn btn-outline-secondary btn-sm">Exportar PDF</button>
+  </div>
+
+  <!-- Descrição do Evento -->
+  <div class="mb-4">
+    <h6>Descrição do Evento</h6>
+    <p>Evento de Coleta Seletiva realizado no bairro Boa Vista, reunindo empresas e voluntários para reciclagem de materiais plásticos e vidro.</p>
+  </div>
+
+  <!-- Tabela Responsiva -->
+  <div class="mb-4">
+    <h6>Dados Detalhados</h6>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="table-light">
+          <tr>
+            <th>Material</th>
+            <th>Quantidade</th>
+            <th>Unidade</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Plástico</td>
+            <td>500</td>
+            <td>kg</td>
+            <td>R$ 2.000,00</td>
+          </tr>
+          <tr>
+            <td>Vidro</td>
+            <td>300</td>
+            <td>kg</td>
+            <td>R$ 900,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Gráfico de exemplo -->
+  <div class="mb-4">
+    <h6>Visualização Gráfica</h6>
+    <canvas id="graficoRelatorio" style="max-width: 600px;"></canvas>
+  </div>
+
+  <!-- Totais e Indicadores -->
+  <div class="mb-2">
+    <h6>Resumo</h6>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="border rounded p-3 bg-light text-center">
+          <strong>Total Coletado:</strong><br> 800 kg
         </div>
       </div>
-
-      <div class="tabela">
-        <h3>Tabela Detalhada</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Tipo</th>
-              <th>Coletado</th>
-              <th>Reciclado</th>
-              <th>% Rec</th>
-              <th>Ponto de Coleta</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Plástico</td><td>400 kg</td><td>300 kg</td><td>75%</td><td>Ponto 1</td></tr>
-            <tr><td>Papelão</td><td>300 kg</td><td>220 kg</td><td>73.3%</td><td>Ponto 3</td></tr>
-            <tr><td>Vidro</td><td>200 kg</td><td>150 kg</td><td>75%</td><td>Ponto 2</td></tr>
-            <tr><td>Metal</td><td>200 kg</td><td>180 kg</td><td>90%</td><td>Ponto 5</td></tr>
-            <tr><td>Eletrônico</td><td>150 kg</td><td>50 kg</td><td>33.3%</td><td>Ponto 4</td></tr>
-          </tbody>
-        </table>
+      <div class="col-md-3">
+        <div class="border rounded p-3 bg-light text-center">
+          <strong>Total Reciclado:</strong><br> 600 kg
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border rounded p-3 bg-light text-center">
+          <strong>Taxa de Reciclagem:</strong><br> 75%
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="border rounded p-3 bg-light text-center">
+          <strong>Valor Total:</strong><br> R$ 2.900,00
+        </div>
       </div>
     </div>
   </div>
 
-
-
-<div class="criar-relatorio">
-    <div class="container"
-  <h2>Criar Novo Relatório</h2>
-  <form>
-    <div>
-      <label for="evento">Evento / Ponto</label>
-      <select id="evento">
-        <option value="">Selecione</option>
-        <option>Ciclo Vivo / Pracinha Vila Velha</option>
-      </select>
-    </div>
-    <div>
-      <label for="data">Data do Evento</label>
-      <input type="date" id="data">
-    </div>
-    <div>
-      <label for="tipo-residuo">Tipo de Resíduo</label>
-      <select id="tipo-residuo">
-        <option>Plástico</option>
-        <option>Papelão</option>
-        <option>Vidro</option>
-        <option>Metal</option>
-        <option>Eletrônico</option>
-      </select>
-    </div>
-    <div>
-      <label for="coletado">Quantidade Coletada (kg)</label>
-      <input type="number" id="coletado" min="0">
-    </div>
-    <div>
-      <label for="reciclado">Quantidade Reciclada (kg)</label>
-      <input type="number" id="reciclado" min="0">
-    </div>
-    <div style="flex-basis: 100%;">
-      <button type="submit">Salvar Relatório</button>
-    </div>
-  </form>
-
-  <div class="criar-relatorio" id="criar-relatorio"></div>
 </div>
-    
-<footer class="text-white mt-5 p-4 text-center">
+</div>
+
+
+
+<footer class="text-white mt-5 p-4 text-center" style="background-color: #343a40; width: 100%;">
   <div class="social-section mb-4">
       <p>Siga-nos nas redes sociais:</p>
       <ul class="social-links list-unstyled d-flex justify-content-center">
@@ -164,25 +173,53 @@
           </li>
       </ul>
   </div>
+
   <div class="form-container mb-4">
       <form>
           <p class="form-text" style="color: white;">Tem dúvidas?</p>
           <div class="input-container d-flex justify-content-center">
-            <input type="email" id="email" name="email" class="form-input form-control w-50 me-2" placeholder="seuemail@exemplo.com" required>
-            <button type="submit" class="btn btn-primary-2" style="color: white;">Enviar</button>
+              <input type="email" id="email" name="email" class="form-input form-control w-50 me-2" placeholder="seuemail@exemplo.com" required>
+              <button type="submit" class="btn btn-primary-2" style="color: white;">Enviar</button>
           </div>
       </form>
   </div>
+
   <div class="copy-section">
       <p>&copy; 2025 Empresa Tech ES - todos os direitos reservados.</p>
   </div>
 </footer>
 
-  <script>
-  function criarRelatorio() {
-    document.getElementById("criar-relatorio").scrollIntoView({ behavior: "smooth" });
-  }
-  </script>
+
+<!-- Importando Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('graficoRelatorio').getContext('2d');
+  const graficoRelatorio = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Plástico', 'Vidro'],
+      datasets: [{
+        label: 'Quantidade (kg)',
+        data: [500, 300],
+        backgroundColor: ['#4caf50', '#2196f3']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Materiais Coletados'
+        }
+      }
+    }
+  });
+</script>
+
 
 </body>
 </html>

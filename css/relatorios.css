@@ -65,181 +65,6 @@ footer li a {
     font-weight: 500;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 20px;
-}
-
-.header div {
-  margin-right: 15px;
-}
-
-.header label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.header select,
-.header input[type="text"] {
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  min-width: 160px;
-}
-
-.buttons button {
-  margin-left: 10px;
-  background-color: #4a6842;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.buttons button:hover {
-  background-color: #3b5336;
-  transform: scale(1.05);
-}
-
-.resumo {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f0f0f0;
-  padding: 20px;
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-.main {
-  display: flex;
-  justify-content: space-between;
-}
-
-.grafico {
-  width: 45%;
-}
-
-.grafico .barras {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  height: 300px;
-  border-left: 2px solid #333;
-  border-bottom: 2px solid #333;
-  padding: 10px;
-}
-
-.barra {
-  width: 50px;
-  background-color: #4a6842;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  color: white;
-  font-size: 12px;
-  position: relative;
-}
-
-.barra span {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  padding: 4px;
-}
-
-.tabela {
-  width: 50%;
-}
-
-.tabela table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.tabela th, .tabela td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: center;
-}
-
-.criar-relatorio {
-  margin-top: 40px;
-  border-top: 2px solid #ccc;
-  padding-top: 20px;
-}
-
-.criar-relatorio .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.criar-relatorio form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.criar-relatorio form > div {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-}
-
-.criar-relatorio label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.criar-relatorio input,
-.criar-relatorio select {
-  padding: 6px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.criar-relatorio button {
-  background-color: #4a6842;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 10px;
-}
-
-.criar-relatorio button:hover {
-  background-color: #3b5336;
-  transform: scale(1.05);
-}
-
 footer {
     background: #3B5B33 !important;
     color: white;
@@ -255,4 +80,35 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 70px;
+}
+
+.inicio-container {
+  padding: 20px;
+}
+
+.form-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-group select,
+.form-group input {
+  min-width: 150px;
+}
+
+form button {
+  background-color: #3B5B33 !important;
+}
+
+h1 {
+    color: #3B5B33;
+    margin: 20px;
 }
