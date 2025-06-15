@@ -7,10 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../css/denuncia.css"> 
+    <link rel="stylesheet" href="eco.css"> 
 </head>
-<!DOCTYPE html>
-<html lang="en">
 <body>
 
     <div class="top-bar d-flex align-items-center justify-content-between px-4 py-2" style="background-color: #e6e1e1;">
@@ -26,17 +24,57 @@
           </button>
           <div class="collapse navbar-collapse" id="menuNavbar">
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link active" href="../html/homenova.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="../html/home.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="../html/eventos.html">Eventos</a></li>
               <li class="nav-item"><a class="nav-link" href="../html/denuncia.html">Denúncias</a></li>
               <li class="nav-item"><a class="nav-link" href="../html/relatorios.html">Relatórios</a></li>
               <li class="nav-item"><a class="nav-link" href="../html/meuPerfil.html">Meu Perfil</a></li>
-              <li class="nav-item"><a class="nav-link" href="../html/login.html">Login/Criar Conta</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/meuPerfil.html">Login/Criar Conta</a></li>
             </ul>
           </div>
         </div>
       </nav>
       
+<main class="container denuncia-form my-5 py-4">
+  <h2 class="mb-4">Denúncia de resíduo abandonado</h2>
+  <div class="card p-4 shadow-sm">
+    <form>
+      <div class="mb-3">
+        <label for="localizacao" class="form-label">Localização</label>
+        <select class="form-select" id="localizacao" required>
+          <option selected disabled>Selecione uma localização</option>
+          <option value="praia">Praia</option>
+          <option value="rua">Rua</option>
+          <option value="parque">Parque</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3 text-center">
+          <label for="foto" class="form-label">Foto do resíduo</label>
+          <div class="upload-box border rounded p-4 d-flex flex-column align-items-center justify-content-center">
+            <i class="bi bi-cloud-upload" style="font-size: 2rem;"></i>
+            <input class="form-control mt-2" type="file" id="foto">
+            <small class="text-muted">Escolha a imagem</small>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="descricao" class="form-label">Descrição do problema</label>
+          <textarea class="form-control h-100" id="descricao" rows="6" placeholder="Descreva o problema..."></textarea>
+        </div>
+      </div>
+
+      <div class="text-end">
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+
+
+
   <footer class="text-white mt-5 p-4 text-center">
     <div class="social-section mb-4">
         <p>Siga-nos nas redes sociais:</p>
