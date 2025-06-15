@@ -44,13 +44,6 @@ nav ul li a:hover {
 
 
 
-footer {
-    background: #3B5B33;
-    color: whitesmoke;
-    text-align: center;
-    padding: 20px;
-}
-
 footer ul {
     list-style: none;
 }
@@ -63,4 +56,23 @@ footer li a {
     font-family: 'Inter', sans-serif;
     color:#ffffff;
     font-weight: 500;
+}
+
+/* Estilo para o footer */
+footer {
+    background: #3B5B33 !important;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+/* Estilo para a seção de redes sociais no footer */
+.social-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 70px;
 }
