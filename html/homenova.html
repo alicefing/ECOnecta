@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ECOnecta - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body class="bg-light">
+   <div class="top-bar d-flex align-items-center justify-content-between px-4 py-2" style="background-color: #e6e1e1;">
+    <div class="d-flex align-items-center">
+      <img src="../img/ChatGPT Image 14 de jun. de 2025, 15_42_41.png" alt="Logo" style="height: 70px;">
+      <h1 class="ms-3" style="font-size: 24px; margin: 0;">ECOnecta</h1>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-expand-lg">  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="../html/home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/denuncia.html">Denúncias</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/relatorios.html">Relatórios</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/meuPerfil.html">Meu Perfil</a></li>
+            <li class="nav-item"><a class="nav-link" href="../html/meuPerfil.html">Login/Criar Conta</a></li>
+            </ul>
+        </div>
+    </nav> 
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="p-4 bg-white rounded shadow-sm">
+          <h5>Sobre nós:</h5>
+          <p>
+            A ECOnecta é uma plataforma voltada para a sustentabilidade e a conscientização ambiental.
+            Nosso objetivo é facilitar a reciclagem por meio do mapeamento e divulgação de pontos de coleta.
+            Conectamos pessoas e soluções para um futuro mais limpo e consciente.
+          </p>
+          <div class="d-grid gap-2">
+            <button class="btn btn-outline-success">Cadastrar evento</button>
+            <button class="btn btn-outline-danger">Denunciar resíduo abandonado</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="p-4 bg-white rounded shadow-sm text-center">
+          <h5>Pontos de Coleta próximos</h5>
+          <div class="mb-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086233249412!2d-122.41941548468113!3d37.7749297797598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c25b869bb%3A0x9562649e59a47c5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1625017411271!5m2!1sen!2sus"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+          <button class="btn btn-success">Encontrar ponto de coleta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-white mt-5 p-4 text-center">
+  <div class="social-section mb-4">
+      <p>Siga-nos nas redes sociais:</p>
+      <ul class="social-links list-unstyled d-flex justify-content-center">
+          <li class="mx-2">
+              <a href="https://www.facebook.com" target="_blank">
+                  <i class="bi bi-facebook" style="font-size: 40px; color: white;"></i>
+              </a>
+          </li>
+          <li class="mx-2">
+              <a href="https://www.instagram.com" target="_blank">
+                  <i class="bi bi-instagram" style="font-size: 40px; color: white;"></i>
+              </a>
+          </li>
+          <li class="mx-2">
+              <a href="https://www.linkedin.com" target="_blank">
+                  <i class="bi bi-linkedin" style="font-size: 40px; color: white;"></i>
+              </a>
+          </li>
+      </ul>
+  </div>
+  <div class="form-container mb-4">
+      <form>
+          <p class="form-text" style="color: white;">Tem dúvidas?</p>
+          <div class="input-container d-flex justify-content-center">
+            <input type="email" id="email" name="email" class="form-input form-control w-50 me-2" placeholder="seuemail@exemplo.com" required>
+            <button type="submit" class="btn btn-primary-2" style="color: white;">Enviar</button>
+          </div>
+      </form>
+  </div>
+  <div class="copy-section">
+      <p>&copy; 2025 Empresa Tech ES - todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
