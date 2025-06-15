@@ -74,7 +74,6 @@ footer li a {
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   font-family: Arial, Helvetica, sans-serif;
-  margin: 25px;
 }
 
 .table th, 
@@ -130,7 +129,7 @@ footer li a {
 
 
 
-h1 {
+h1, h2 {
     color: #3B5B33;
     margin: 20px;
 }
@@ -148,6 +147,43 @@ h1 {
 }
 
 
-.button {
+.table button {
     background-color: #3B5B33;
+}
+
+.table img {
+    width: 30px;
+}
+
+.botao button {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: #3B5B33;
+}
+
+.card-container {
+  display: flex;
+  gap: 16px; /* espaço entre as imagens */
+  justify-content: center; /* centraliza as imagens no container */
+  align-items: flex-end; /* alinha verticalmente à base */
+}
+
+.card-container img {
+  width: 150px; /* define um tamanho menor */
+  height: auto; /* mantém proporção */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra */
+  border-radius: 5px; /* opcional: cantos arredondados */
+  transition: transform 0.2s; /* animação suave se quiser fazer hover */
+  margin: 15px;
+}
+
+.card-container img:hover {
+  transform: scale(1.05); /* opcional: efeito ao passar o mouse */
+}
+
+form label {
+    color: #000000;
+    margin: 20px;
 }

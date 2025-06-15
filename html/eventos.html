@@ -35,7 +35,112 @@
           </div>
         </div>
       </nav>
+
+      <h1>Calendário de Eventos e Oficinas</h1>
+<div class="botao">
       
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#minhaSobreposicao">
+    Cadastrar Evento
+    </button>
+
+<!-- Modal -->
+<div class="modal fade" id="minhaSobreposicao" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Criar Evento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Conteúdo da nova "página" aqui -->
+       <form>
+  <div class="mb-3">
+     <label for="nome">Nome do Evento:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+  </div>
+
+  <div class="mb-3">
+     <label for="nome">Local do Evento:</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+  </div>
+
+  <div class="mb-3 form-check">   
+    <label for="data">Data do Evento:</label>
+  <input type="date" id="data" name="data">
+</div> 
+
+<div class="mb-3 form-check">  
+   <label for="hora">Horário:</label>
+   <input type="time" id="hora" name="hora">
+</div>
+ 
+   <div class="mb-3">
+     <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+  </div>
+
+   <div class="mb-3">
+     <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+  </div>
+
+ <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+      <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Data</th>
+      <th scope="col">Local</th>
+      <th scope="col">Inscrição</th>
+      <th scope="col">Lembrar-me</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Empreendedorismo e Futuro Verde</th>
+      <td>12/03/2025</td>
+      <td>Sede UVV</td>
+      <td><button type="button" class="btn btn-success">Inscreva-se</button></td>
+      <td><a class="alerta" href=""><img src="../img/ChatGPT Image 14 de jun. de 2025, 18_36_33.png"></a> </td>
+    </tr>
+    <tr>
+      <th scope="row">Regando o Presente</th>
+      <td>16/04/2025</td>
+      <td>Pracinha Vila Velha</td>
+      <td><button type="button" class="btn btn-success">Inscreva-se</button></td>
+      <td><a class="alerta" href=""><img src="../img/ChatGPT Image 14 de jun. de 2025, 18_36_33.png"></a></td>
+    </tr>
+    <tr>
+      <th scope="row">Cultivando Bons Modos</th>
+      <td>28/05/2025</td>
+      <td>Parque da Cebola</td>
+      <td><button type="button" class="btn btn-success">Inscreva-se</button></td>
+      <td><a class="alerta" href=""><img src="../img/ChatGPT Image 14 de jun. de 2025, 18_36_33.png"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Lembranças dos encontros passados</h2>
+
+<div class="card-container">
+    <img src="../img/img1.png" alt="pessoas reciclando">
+    <img src="../img/img2.png" alt="pessoas reciclando">
+    <img src="../img/img3.png" alt="pessoas reciclando">
+    <img src="../img/img4.png" alt="pessoas reciclando">
+</div>
+
            <footer>
         <p>Siga-nos nas redes sociais:</p>
      
