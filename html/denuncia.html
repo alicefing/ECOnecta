@@ -40,30 +40,32 @@
   <div class="card p-4 shadow-sm">
     <form>
       <div class="mb-3">
-        <label for="localizacao" class="form-label">Localização</label>
-        <select class="form-select" id="localizacao" required>
-          <option selected disabled>Selecione uma localização</option>
-          <option value="praia">Praia</option>
-          <option value="rua">Rua</option>
-          <option value="parque">Parque</option>
-        </select>
-      </div>
+  <label for="localizacao" class="form-label">Localização</label>
+  <input 
+    type="text" 
+    class="form-control" 
+    id="localizacao" 
+    placeholder="Digite o endereço completo" 
+    required
+  >
+</div>
 
       <div class="row">
-        <div class="col-md-6 mb-3 text-center">
-          <label for="foto" class="form-label">Foto do resíduo</label>
-          <div class="upload-box border rounded p-4 d-flex flex-column align-items-center justify-content-center">
-            <i class="bi bi-cloud-upload" style="font-size: 2rem;"></i>
-            <input class="form-control mt-2" type="file" id="foto">
-            <small class="text-muted">Escolha a imagem</small>
-          </div>
-        </div>
+  <div class="col-md-6 mb-3 d-flex flex-column align-items-center">
+    <label for="foto" class="form-label w-100">Foto do resíduo</label>
+    <div class="upload-box border rounded p-4 d-flex flex-column align-items-center justify-content-center w-100" style="min-height: 200px;">
+      <i class="bi bi-cloud-upload" style="font-size: 2.5rem; color: #3B5B33;"></i>
+      <input class="form-control mt-3" type="file" id="foto" style="max-width: 100%;">
+      <small class="text-muted mt-2">Escolha a imagem</small>
+    </div>
+  </div>
 
-        <div class="col-md-6 mb-3">
-          <label for="descricao" class="form-label">Descrição do problema</label>
-          <textarea class="form-control h-100" id="descricao" rows="6" placeholder="Descreva o problema..."></textarea>
-        </div>
-      </div>
+  <div class="col-md-6 mb-3 d-flex flex-column">
+    <label for="descricao" class="form-label">Descrição do problema</label>
+    <textarea class="form-control flex-grow-1" id="descricao" rows="6" placeholder="Descreva o problema..."></textarea>
+  </div>
+</div>
+
 
       <div class="text-end">
         <button type="submit" class="btn btn-success">Enviar</button>
