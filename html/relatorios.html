@@ -17,6 +17,7 @@
   </div>
 </div>
 
+     
      <nav class="navbar navbar-expand-lg">
      
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
@@ -36,34 +37,6 @@
         </div>
       </nav>
      
-    
-    <div class="top-bar d-flex align-items-center justify-content-between px-4 py-2" style="background-color: #e6e1e1;">
-  <div class="d-flex align-items-center">
-    <img src="../img/ChatGPT Image 14 de jun. de 2025, 15_42_41.png" alt="Logo" style="height: 70px;">
-    <h1 class="ms-3" style="font-size: 24px; margin: 0;">ECOnecta</h1>
-  </div>
-</div>
-
-     <nav class="navbar navbar-expand-lg">
-     
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="menuNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="../html/home.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="../html/eventos.html">Eventos</a></li>
-              <li class="nav-item"><a class="nav-link" href="../html/denuncia.html">Denúncias</a></li>
-              <li class="nav-item"><a class="nav-link active" href="../html/relatorios.html">Relatórios</a></li>
-              <li class="nav-item"><a class="nav-link" href="../html/meuPerfil.html">Meu Perfil</a></li>
-              <li class="nav-item"><a class="nav-link" href="../html/meuPerfil.html">Login/Criar Conta</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
- 
   <div class="container">
     <h1>Relatório de Reciclagem</h1>
 
@@ -169,19 +142,42 @@
   <div class="criar-relatorio" id="criar-relatorio"></div>
 </div>
     
-    <footer class="text-end py-4" style="background-color: #355E3B; color: white;">
-  <div class="mb-2">
-    <a href="#" class="text-white me-3" style="font-size: 24px;">
-      <i class="bi bi-facebook"></i>
-    </a>
-    <a href="#" class="text-white" style="font-size: 24px;">
-      <i class="bi bi-google"></i>
-    </a>
+<footer class="text-white mt-5 p-4 text-center">
+  <div class="social-section mb-4">
+      <p>Siga-nos nas redes sociais:</p>
+      <ul class="social-links list-unstyled d-flex justify-content-center">
+          <li class="mx-2">
+              <a href="https://www.facebook.com" target="_blank">
+                  <i class="bi bi-facebook" style="font-size: 40px; color: white;"></i>
+              </a>
+          </li>
+          <li class="mx-2">
+              <a href="https://www.instagram.com" target="_blank">
+                  <i class="bi bi-instagram" style="font-size: 40px; color: white;"></i>
+              </a>
+          </li>
+          <li class="mx-2">
+              <a href="https://www.linkedin.com" target="_blank">
+                  <i class="bi bi-linkedin" style="font-size: 40px; color: white;"></i>
+              </a>
+          </li>
+      </ul>
   </div>
-  <p>&copy; 2025 ECOnecta. Todos os direitos reservados.</p>
-</footer> 
+  <div class="form-container mb-4">
+      <form>
+          <p class="form-text" style="color: white;">Tem dúvidas?</p>
+          <div class="input-container d-flex justify-content-center">
+            <input type="email" id="email" name="email" class="form-input form-control w-50 me-2" placeholder="seuemail@exemplo.com" required>
+            <button type="submit" class="btn btn-primary-2" style="color: white;">Enviar</button>
+          </div>
+      </form>
+  </div>
+  <div class="copy-section">
+      <p>&copy; 2025 Empresa Tech ES - todos os direitos reservados.</p>
+  </div>
+</footer>
 
-    <script>
+  <script>
   function criarRelatorio() {
     document.getElementById("criar-relatorio").scrollIntoView({ behavior: "smooth" });
   }

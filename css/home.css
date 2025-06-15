@@ -58,7 +58,6 @@ footer li a {
     font-weight: 500;
 }
 
-/* Estilo para o footer */
 footer {
     background: #3B5B33 !important;
     color: white;
@@ -69,7 +68,6 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Estilo para a seção de redes sociais no footer */
 .social-section {
     display: flex;
     flex-direction: column;

@@ -151,3 +151,20 @@ login-alt img {
   grid-column: 2 / 3;
   justify-self: end;
 }
+
+footer {
+    background: #3B5B33 !important;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 70px;
+}
