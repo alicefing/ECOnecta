@@ -39,10 +39,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color:rgb(27, 13, 13) !important;
+    color: rgb(27, 13, 13) !important;
 }
-
-
 
 footer {
     background: #3B5B33;
@@ -61,7 +59,7 @@ footer li a {
 
 .navbar-brand {
     font-family: 'Inter', sans-serif;
-    color:#ffffff;
+    color: #ffffff;
     font-weight: 500;
 }
 
@@ -70,8 +68,8 @@ footer {
     color: white;
     padding: 15px 40px;
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -80,4 +78,110 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 70px;
+}
+
+.denuncia-form h2 {
+    color: #3B5B33;
+    font-weight: bold;
+    text-align: left;
+}
+
+.upload-box {
+    height: 200px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-box:hover {
+    background-color: #e0e0e0;
+}
+
+.upload-box input[type="file"] {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Estilização do título */
+.denuncia-form h2 {
+    color: #3B5B33;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Card com sombra leve e bordas arredondadas */
+.denuncia-form .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Box de upload de imagem */
+.upload-box {
+    height: 200px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px dashed #bbb;
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
+}
+
+.upload-box:hover {
+    background-color: #f0f0f0;
+}
+
+.upload-box i {
+    font-size: 40px;
+    color: #3B5B33;
+}
+
+.upload-box small {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilo do botão Enviar */
+.denuncia-form button.btn {
+    background-color: #3B5B33;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    min-width: 120px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.denuncia-form button.btn:hover {
+    background-color: #2a3d24;
+    transform: scale(1.02);
+}
+
+/* Alinhamento do botão */
+.denuncia-form .text-end {
+    text-align: right;
+    padding-top: 20px;
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+    .upload-box {
+        height: auto;
+    }
+
+    .denuncia-form h2 {
+        text-align: center;
+    }
+
+    .denuncia-form .text-end {
+        text-align: center !important;
+        padding-top: 15px;
+    }
 }
