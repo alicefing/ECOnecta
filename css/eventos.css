@@ -165,25 +165,34 @@ h1, h2 {
 
 .card-container {
   display: flex;
-  gap: 16px; /* espaço entre as imagens */
-  justify-content: center; /* centraliza as imagens no container */
-  align-items: flex-end; /* alinha verticalmente à base */
+  flex-wrap: wrap; /* permite quebrar linha */
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .card-container img {
-  width: 150px; /* define um tamanho menor */
-  height: auto; /* mantém proporção */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra */
-  border-radius: 5px; /* opcional: cantos arredondados */
-  transition: transform 0.2s; /* animação suave se quiser fazer hover */
+  width: 150px;
+  max-width: 100%; /* impede overflow */
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: transform 0.2s;
   margin: 15px;
 }
 
 .card-container img:hover {
-  transform: scale(1.05); /* opcional: efeito ao passar o mouse */
+  transform: scale(1.05);
 }
 
 form label {
     color: #000000;
     margin: 20px;
 }
+
+.card img {
+    width: 150px;
+    align-items: center;
+}
+
+

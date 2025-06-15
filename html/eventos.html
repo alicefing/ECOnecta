@@ -12,7 +12,7 @@
 
     <div class="top-bar d-flex align-items-center justify-content-between px-4 py-2" style="background-color: #e6e1e1;">
   <div class="d-flex align-items-center">
-    <img src="../ChatGPT Image 14 de jun. de 2025, 15_42_41.png" alt="Logo" style="height: 70px;">
+    <img src="../img/ChatGPT Image 14 de jun. de 2025, 15_42_41.png" alt="Logo" style="height: 70px;">
     <h1 class="ms-3" style="font-size: 24px; margin: 0;">ECOnecta</h1>
   </div>
 </div>
@@ -55,38 +55,42 @@
         <!-- Conteúdo da nova "página" aqui -->
        <form>
   <div class="mb-3">
-     <label for="nome">Nome do Evento:</label>
-    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+    <label for="nome" class="form-label">Nome do Evento:</label>
+    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome do evento">
   </div>
 
   <div class="mb-3">
-     <label for="nome">Local do Evento:</label>
-  <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+    <label for="nome" class="form-label">Local do Evento:</label>
+    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o local do evento">
   </div>
 
-  <div class="mb-3 form-check">   
-    <label for="data">Data do Evento:</label>
-  <input type="date" id="data" name="data">
-</div> 
-
-<div class="mb-3 form-check">  
-   <label for="hora">Horário:</label>
-   <input type="time" id="hora" name="hora">
-</div>
- 
-   <div class="mb-3">
-     <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+  <!-- Campo Data -->
+  <div class="mb-3">
+    <label for="data" class="form-label">Data:</label>
+    <input type="date" class="form-control" id="data" name="data">
   </div>
 
-   <div class="mb-3">
-     <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+  <!-- Campo Hora -->
+  <div class="mb-3">
+    <label for="hora" class="form-label">Horário:</label>
+    <input type="time" class="form-control" id="hora" name="hora">
+  </div>
+
+  <h5><b>Estimativa de Resíduos Gerados</b></h5>
+
+  <div class="mb-3">
+    <label for="nome" class="form-label">Tipo de Resíduo:</label>
+    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o tipo de resíduo">
+  </div>
+
+  <div class="mb-3">
+    <label for="nome" class="form-label">Quantidade de Resíduo:</label>
+    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite a quantidade de resíduo">
   </div>
 
  <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <label class="form-check-label" for="exampleCheck1">Concordo com os <a href="../html/termosEvento.html" target="_blank">Termos</a></label>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
@@ -140,6 +144,50 @@
     <img src="../img/img3.png" alt="pessoas reciclando">
     <img src="../img/img4.png" alt="pessoas reciclando">
 </div>
+
+<h2>Feedbacks</h2>
+
+<div class="container py-4">
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-6 col-lg-5">
+      <div class="card h-100">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/pessoa.png" class="img-fluid rounded-start" alt="Pessoa">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text">"Participei do evento de coleta e me surpreendi com a organização e o impacto gerado. É gratificante saber que pequenas atitudes fazem uma grande diferença para o planeta!" — Amanda S., Moradora de Vila Velha</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-6 col-lg-5">
+      <div class="card h-100">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/pessoa.png" class="img-fluid rounded-start" alt="Pessoa">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text">"A experiência de participar dos eventos foi transformadora! Conheci pessoas, aprendi sobre separação correta de resíduos e ainda ajudei a comunidade." — João M., Estudante</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 5 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 
            <footer>
         <p>Siga-nos nas redes sociais:</p>
