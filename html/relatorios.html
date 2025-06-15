@@ -35,7 +35,141 @@
           </div>
         </div>
       </nav>
-      <footer class="text-end py-4" style="background-color: #355E3B; color: white;">
+     
+    
+    <div class="top-bar d-flex align-items-center justify-content-between px-4 py-2" style="background-color: #e6e1e1;">
+  <div class="d-flex align-items-center">
+    <img src="../img/ChatGPT Image 14 de jun. de 2025, 15_42_41.png" alt="Logo" style="height: 70px;">
+    <h1 class="ms-3" style="font-size: 24px; margin: 0;">ECOnecta</h1>
+  </div>
+</div>
+
+     <nav class="navbar navbar-expand-lg">
+     
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="menuNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="../html/home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/eventos.html">Eventos</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/denuncia.html">Denúncias</a></li>
+              <li class="nav-item"><a class="nav-link active" href="../html/relatorios.html">Relatórios</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/meuPerfil.html">Meu Perfil</a></li>
+              <li class="nav-item"><a class="nav-link" href="../html/meuPerfil.html">Login/Criar Conta</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+ 
+  <div class="container">
+    <h1>Relatório de Reciclagem</h1>
+
+    <div class="header">
+      <div>
+        <label>Evento / Ponto</label>
+        <select>
+          <option>Ciclo Vivo / Pracinha Vila Velha</option>
+        </select>
+      </div>
+      <div>
+        <label>Data do Evento</label>
+        <input type="date" value="2025-02-12">
+      </div>
+      <div class="buttons">
+        <button onclick="gerarRelatorio()">Gerar Relatório</button>
+        <button onclick="criarRelatorio()">Criar Relatório</button>
+      </div>
+    </div>
+
+    <div class="resumo">
+      <div><strong>Total Coletado</strong><br>1.250 kg</div>
+      <div><strong>Total Reciclado</strong><br>850 kg</div>
+      <div><strong>Taxa de Reciclagem</strong><br>68%</div>
+    </div>
+
+    <div class="main">
+      <div class="grafico">
+        <h3>Volumes de Resíduos por Tipos (Kg)</h3>
+        <div class="barras">
+          <div class="barra" style="height: 300px;"><span>Plástico</span></div>
+          <div class="barra" style="height: 220px;"><span>Papelão</span></div>
+          <div class="barra" style="height: 180px;"><span>Vidro</span></div>
+          <div class="barra" style="height: 120px;"><span>Metal</span></div>
+          <div class="barra" style="height: 50px;"><span>Eletrônico</span></div>
+        </div>
+      </div>
+
+      <div class="tabela">
+        <h3>Tabela Detalhada</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Coletado</th>
+              <th>Reciclado</th>
+              <th>% Rec</th>
+              <th>Ponto de Coleta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Plástico</td><td>400 kg</td><td>300 kg</td><td>75%</td><td>Ponto 1</td></tr>
+            <tr><td>Papelão</td><td>300 kg</td><td>220 kg</td><td>73.3%</td><td>Ponto 3</td></tr>
+            <tr><td>Vidro</td><td>200 kg</td><td>150 kg</td><td>75%</td><td>Ponto 2</td></tr>
+            <tr><td>Metal</td><td>200 kg</td><td>180 kg</td><td>90%</td><td>Ponto 5</td></tr>
+            <tr><td>Eletrônico</td><td>150 kg</td><td>50 kg</td><td>33.3%</td><td>Ponto 4</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="criar-relatorio">
+    <div class="container"
+  <h2>Criar Novo Relatório</h2>
+  <form>
+    <div>
+      <label for="evento">Evento / Ponto</label>
+      <select id="evento">
+        <option value="">Selecione</option>
+        <option>Ciclo Vivo / Pracinha Vila Velha</option>
+      </select>
+    </div>
+    <div>
+      <label for="data">Data do Evento</label>
+      <input type="date" id="data">
+    </div>
+    <div>
+      <label for="tipo-residuo">Tipo de Resíduo</label>
+      <select id="tipo-residuo">
+        <option>Plástico</option>
+        <option>Papelão</option>
+        <option>Vidro</option>
+        <option>Metal</option>
+        <option>Eletrônico</option>
+      </select>
+    </div>
+    <div>
+      <label for="coletado">Quantidade Coletada (kg)</label>
+      <input type="number" id="coletado" min="0">
+    </div>
+    <div>
+      <label for="reciclado">Quantidade Reciclada (kg)</label>
+      <input type="number" id="reciclado" min="0">
+    </div>
+    <div style="flex-basis: 100%;">
+      <button type="submit">Salvar Relatório</button>
+    </div>
+  </form>
+
+  <div class="criar-relatorio" id="criar-relatorio"></div>
+</div>
+    
+    <footer class="text-end py-4" style="background-color: #355E3B; color: white;">
   <div class="mb-2">
     <a href="#" class="text-white me-3" style="font-size: 24px;">
       <i class="bi bi-facebook"></i>
@@ -46,5 +180,12 @@
   </div>
   <p>&copy; 2025 ECOnecta. Todos os direitos reservados.</p>
 </footer> 
+
+    <script>
+  function criarRelatorio() {
+    document.getElementById("criar-relatorio").scrollIntoView({ behavior: "smooth" });
+  }
+  </script>
+
 </body>
 </html>
