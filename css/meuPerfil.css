@@ -9,7 +9,7 @@ nav {
     background: #3B5B33;
     padding: 15px;
     position: fixed;
-    width: 100%;
+    width: 100%; 
     top: 0;
     left: 0;
     text-align: center;
@@ -80,4 +80,144 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 70px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e8f0ec, #f5f9f7);
+  padding: 40px 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  background: #ffffff;
+  padding: 30px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #3B5B33;
+  text-align: center;
+  font-size: 28px;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.profile-photo {
+  flex: 0 0 120px;
+  text-align: center;
+}
+
+.profile-photo img {
+  width: 80px;
+  height: 80px;
+  background-color: #3B5B33;
+  border-radius: 50%;
+  border: 3px solid #cfe5d6;
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3B5B33;
+}
+
+.divider {
+  width: 1px;
+  background: #dcdcdc;
+  height: auto;
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-block {
+  flex: 1 1 45%;
+  min-width: 200px;
+}
+
+.info-block label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.info-block input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fefefe;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.info-block input:focus {
+  outline: none;
+  border-color: #3B5B33;
+  box-shadow: 0 0 5px rgba(77, 104, 77, 0.3);
+}
+
+.actions {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.actions button {
+  padding: 12px 30px;
+  background: linear-gradient(to right, #3B5B33, #6b896b);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions button:hover {
+  background: linear-gradient(to right, #3B5B33, #587258);
+}
+
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .profile-info {
+    width: 100%;
+  }
+
+  .actions {
+    text-align: center;
+  }
 }
